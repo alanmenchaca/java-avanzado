@@ -1,6 +1,6 @@
 package ejemploconversionobjetos;
 
-public class EjemploConversionObjetos {
+public class EjemploConversionObjetos { 
 
     public static void main(String[] args) {
 
