@@ -2,7 +2,7 @@ package datos;
 
 import excepciones.AccesoDatosEx;
 
-public interface AccesoDatos {
+public interface AccesoDatos { 
 
     // Métodos que pueden arrojar Excepciones de tipo subclase es decir;
     // Escritura de datos o lectura de datos Exception.
