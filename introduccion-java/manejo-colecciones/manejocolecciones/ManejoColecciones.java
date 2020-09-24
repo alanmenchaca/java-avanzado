@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class ManejoColecciones {
+public class ManejoColecciones {  
 
     public static void main(String[] args) {
 
