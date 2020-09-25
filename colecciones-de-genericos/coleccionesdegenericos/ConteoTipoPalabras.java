@@ -3,7 +3,7 @@ package coleccionesdegenericos;
 import java.util.*;
 
 // Programa que cuenta el número de ocurrencias de cada palabra en un objeto String
-public class ConteoTipoPalabras {
+public class ConteoTipoPalabras { 
 
     /* Los objetos HashMap tienen una capacidad incial predeterminada (16 elementos) y un
      * factor de carga predeterminado (0.75). HashMap es una clase genérica que recibe dos
