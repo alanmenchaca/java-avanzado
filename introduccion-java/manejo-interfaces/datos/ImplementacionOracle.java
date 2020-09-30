@@ -1,6 +1,6 @@
 package datos;
 
-public class ImplementacionOracle implements AccesoDatos {
+public class ImplementacionOracle implements IAccesoDatos {
 
     @Override
     public void insertar() {

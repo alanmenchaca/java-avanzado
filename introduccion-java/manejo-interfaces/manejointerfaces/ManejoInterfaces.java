@@ -1,24 +1,24 @@
 package manejointerfaces;
 
-import datos.AccesoDatos;
+import datos.IAccesoDatos;
 import datos.ImplementacionOracle;
-import datos.ImplementacionMySql;
+import datos.ImplementacionSql;
 
 public class ManejoInterfaces {
 
     public static void main(String[] args) {
 
-        AccesoDatos oracle = new ImplementacionOracle();
+        IAccesoDatos oracle = new ImplementacionOracle();
         ejecutar(oracle, "listar");
         ejecutar(oracle, "insertar");
 
         System.out.println("");
-        AccesoDatos mysql = new ImplementacionMySql();
+        IAccesoDatos mysql = new ImplementacionSql();
         ejecutar(mysql, "listar");
         ejecutar(mysql, "insertar");
     }
 
-    private static void ejecutar(AccesoDatos datos, String accion) {
+    private static void ejecutar(IAccesoDatos datos, String accion) {
         if ("listar".equals(accion)) {
             datos.listar();
         } else if ("insertar".equals(accion)) {

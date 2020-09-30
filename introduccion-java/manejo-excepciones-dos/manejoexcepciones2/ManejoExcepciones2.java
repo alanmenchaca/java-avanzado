@@ -7,7 +7,7 @@ public class ManejoExcepciones2 {
 
     public static void main(String[] args) {
 
-        AccesoDatos datos = new ImplementacionMySql();
+        IAccesoDatos datos = new ImplementacionSql();
         // cambiamos el estado a simularError = true
         datos.simularError(true);
         ejecutar(datos, "listar");
@@ -18,7 +18,7 @@ public class ManejoExcepciones2 {
         ejecutar(datos, "insertar");
     }
 
-    public static void ejecutar(AccesoDatos datos, String accion) {
+    public static void ejecutar(IAccesoDatos datos, String accion) {
         if ("listar".equals(accion)) {
             try {
                 // Procesamos las excepciones de menor a mayor jerarquía 
